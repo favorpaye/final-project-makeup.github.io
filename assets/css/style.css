@@ -67,7 +67,6 @@ nav {
 }
 
 #vaccine {
-    height: 250px;
     width: 100%;
     background: lightgray;
     display: flex;
@@ -158,4 +157,153 @@ footer p {
     color: white;
     align-items: center;
     padding: 10px;
+}
+
+@media screen and (max-width:480px) {
+    body {
+        width: 100%;
+    }
+    .header_text img {
+        width: 50%;
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+    nav {
+        background-color: black;
+        width: 100%;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav_wrap {
+        width: 100%;
+        display: flex;
+    }
+    .nav_wrap a {
+        padding: 11px 10px;
+        font-size: 16px;
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+    }
+    .nav_wrap a:hover {
+        background: yellow;
+        color: black;
+    }
+    #hero {
+        width: 100%;
+        height: 370px;
+        background-image: url("../images/hero.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-blend-mode: multiply;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero_text_button_wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 300px;
+    }
+    .hero_button_wrap {
+        display: flex;
+        justify-content: center;
+    }
+    .hero_text_button_wrap h1 {
+        text-align: center;
+        font-size: 20px;
+        color: white;
+    }
+    .hero_text_button_wrap button {
+        margin: 20px 10px;
+    }
+    #vaccine {
+        width: 100%;
+        background: lightgray;
+        display: flex;
+        justify-content: center;
+    }
+    .vaccine_wrap {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-items: center;
+    }
+    .vacine_title {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .vaccine_wrap_para {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    .vaccine_button {
+        margin-top: 20px auto;
+        background: black;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        border: 2px solid black;
+        font-weight: 600;
+        width: 180px;
+    }
+    .vaccine_button:hover {
+        background: yellow;
+        color: black;
+        border: 2px solid black;
+        width: 180px;
+    }
+    #about_container {
+        width: 100%;
+        /* height: 400px; */
+        display: flex;
+        justify-content: center;
+    }
+    .about_wrap {
+        display: flex;
+        flex-direction: column;
+    }
+    #about_container .about_wrap {
+        width: 1200px;
+        display: flex;
+    }
+    .para_button {
+        margin-left: 0;
+    }
+    .about_wrap div {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .about_wrap div h2 {
+        text-decoration: underline;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .about_wrap div p {
+        line-height: 1.7;
+        text-align: center;
+    }
+    .about_wrap button {
+        margin: 25px auto 10px auto;
+    }
+    footer {
+        width: 100%;
+        background: black;
+        text-align: center;
+    }
+    footer p {
+        color: white;
+        align-items: center;
+        padding: 10px;
+        font-size: 10px;
+    }
 }
